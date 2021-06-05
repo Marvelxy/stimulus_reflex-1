@@ -194,7 +194,7 @@ An excellent reference example of StimulusReflex best practices is [todos\_refle
 
 The Reflex class makes use of the `session.id`, the `data-id` attributes from individual Todo model instances, and the new Rails `&` [safe navigation operator](http://mitrev.net/ruby/2015/11/13/the-operator-in-ruby/) \(available since Ruby 2.3\) to make short work of mapping events on the client to your permanent data store.
 
-[todos\_controller.rb](https://github.com/stimulusreflex/stimulus_reflex_todomvc/blob/master/app/controllers/todos_controller.rb) only makes a single ActiveRecord query to render the current state of the view template. Well-designed StimulusReflex applications **leave the heavy-lifting associated with state changes to the Reflex class.**
+[todos\_controller.rb](https://github.com/hopsoft/stimulus_reflex_todomvc/blob/master/app/controllers/todos_controller.rb) only makes a single ActiveRecord query to render the current state of the view template. Well-designed StimulusReflex applications **leave the heavy-lifting associated with state changes to the Reflex class.**
 
 ## Redis
 
